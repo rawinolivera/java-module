@@ -1,21 +1,21 @@
 # Overview
 
-This repository is dedicated to a Java module for two weeks sprint with the purpose to demonstrate fundamentals from the language syntax, logic, object-oriented programming concepts and the use of some data-structure.
-
-Expense Tracker: This is a program that helps users track their daily expenses and provides insights into spending habits.
-
-Improve my programmings skills while developing a software in the Java Language. Learn how to apply the fundamental programmings concepts in this language from zero.
+Hello World Project – a simple Java console application created as part of the initial setup process.  
+This project includes Java installation, GitHub repository setup, and first push using Visual Studio Code.
 
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+VS Code (as the IDE) and the Extension Pack for Java from Microsoft
 
-{Describe the programming language that you used}
+java 21.0.9 2025-10-21 LTS
+Java(TM) SE Runtime Environment (build 21.0.9+7-LTS-338)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.9+7-LTS-338, mixed mode, sharing)
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+- [Java Platform, Standard Edition Documentation](https://docs.oracle.com/en/java/javase/index.html)
+- [Java Downloads](https://www.oracle.com/java/technologies/downloads/#java21)
+- [w3schools - Java Tutorial](https://www.w3schools.com/java/default.asp)
+- [Youtube - Java Installation](https://www.youtube.com/watch?v=-nXpd11YvDI)
