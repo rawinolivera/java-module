@@ -3,7 +3,7 @@
 Hello World Project – a simple Java console application created as part of the initial setup process.  
 This project includes Java installation, GitHub repository setup, and first push using Visual Studio Code.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/Ejeg2A1X0xw)
 
 # Development Environment
 
