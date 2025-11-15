@@ -3,7 +3,10 @@ import java.io.IOException;
 
 public class HelloWorld {
   public static void main(String[] args) throws IOException {
-    System.out.println("Welcome to the Register Program:");
+    System.out.println("*********************************");
+    System.out.println(" Welcome to the Register Program");
+    System.out.println("*********************************");
+    System.out.println();
 
     ExpenseControl expensecontrol = new ExpenseControl();
     expensecontrol.importData("data.csv");
@@ -29,7 +32,7 @@ public class HelloWorld {
           System.out.println();
           expensecontrol.recordExpense();
           System.out.println();
-          System.out.print("Press any key to continue...");
+          System.out.print("Press ENTER to continue...");
           System.in.read();
           System.out.println();
           break;
@@ -38,7 +41,7 @@ public class HelloWorld {
           System.out.println();
           expensecontrol.recordCategory();
           System.out.println();
-          System.out.print("Press any key to continue...");
+          System.out.print("Press ENTER to continue...");
           System.in.read();
           System.out.println();
           break;
@@ -47,7 +50,7 @@ public class HelloWorld {
           System.out.println();
           expensecontrol.listCategory();
           System.out.println();
-          System.out.print("Press any key to continue...");
+          System.out.print("Press ENTER to continue...");
           System.in.read();
           System.out.println();
           break;
@@ -56,7 +59,7 @@ public class HelloWorld {
           System.out.println();
           expensecontrol.listExpenses();
           System.out.println();
-          System.out.print("Press any key to continue...");
+          System.out.print("Press ENTER to continue...");
           System.in.read();
           System.out.println();
           break;
@@ -65,7 +68,7 @@ public class HelloWorld {
           System.out.println();
           expensecontrol.totalByCategory();
           System.out.println();
-          System.out.print("Press any key to continue...");
+          System.out.print("Press ENTER to continue...");
           System.in.read();
           System.out.println();
           break;
@@ -74,19 +77,25 @@ public class HelloWorld {
           System.out.println();
           expensecontrol.categoryTotals();
           System.out.println();
-          System.out.print("Press any key to continue...");
+          System.out.print("Press ENTER to continue...");
           System.in.read();
           System.out.println();
           break;
 
         case 7:
-          System.out.println("call functinos -> close the program");
+          System.out.println();
           expensecontrol.exportData("data.csv");
           System.out.println("Session Closed!");
+          System.out.println();
           break;
 
         default:
-          System.out.println("call functinos -> Wrong option, try again!");
+          System.out.println();
+          System.out.println("Wrong option, try again!");
+          System.out.println();
+          System.out.print("Press ENTER to continue...");
+          System.in.read();
+          System.out.println();
       }
     }
     input.close();

@@ -3,6 +3,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
@@ -175,7 +176,7 @@ public class ExpenseControl {
   }
 
   // init
-  public void importData(String filePath) throws IOException {
+  public void importData(String filePath) {
     try (Scanner scanner = new Scanner(new File(filePath))) {
       String section = "";
       while (scanner.hasNextLine()) {
@@ -217,6 +218,8 @@ public class ExpenseControl {
         }
 
       }
+    } catch (FileNotFoundException e) {
+      System.out.println("Not Category or Expenses found.");
     }
   }
 
