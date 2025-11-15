@@ -1,10 +1,12 @@
 import java.util.Scanner;
+import java.io.IOException;
 
 public class HelloWorld {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
     System.out.println("Welcome to the Register Program:");
 
     ExpenseControl expensecontrol = new ExpenseControl();
+    expensecontrol.importData("data.csv");
     Scanner input = new Scanner(System.in);
     int menu = 0;
 
@@ -12,45 +14,76 @@ public class HelloWorld {
       System.out.println("Menu: ");
       System.out.println("1- Add expense");
       System.out.println("2- Add a new category");
-      System.out.println("3- Reload Data");
+      System.out.println("3- See all categories");
       System.out.println("4- See all expenses");
-      System.out.println("5- View expenses by category or period");
-      System.out.println("6- Save Data");
+      System.out.println("5- View expenses by category");
+      System.out.println("6- Category Stats");
       System.out.println("7- Exit the program");
 
-      System.out.println("Enter an option: ");
+      System.out.print("Enter an option: ");
       menu = input.nextInt();
+      input.nextLine();
 
       switch (menu) {
         case 1:
-          System.out.println("call functinos -> Add expense");
+          System.out.println();
           expensecontrol.recordExpense();
+          System.out.println();
+          System.out.print("Press any key to continue...");
+          System.in.read();
+          System.out.println();
           break;
 
         case 2:
-          System.out.println("call functinos -> Add new category");
+          System.out.println();
           expensecontrol.recordCategory();
+          System.out.println();
+          System.out.print("Press any key to continue...");
+          System.in.read();
+          System.out.println();
           break;
 
         case 3:
-          System.out.println("call functinos -> reload data csv file");
+          System.out.println();
+          expensecontrol.listCategory();
+          System.out.println();
+          System.out.print("Press any key to continue...");
+          System.in.read();
+          System.out.println();
           break;
 
         case 4:
-          System.out.println("call functinos -> see all expenses");
+          System.out.println();
           expensecontrol.listExpenses();
+          System.out.println();
+          System.out.print("Press any key to continue...");
+          System.in.read();
+          System.out.println();
           break;
 
         case 5:
-          System.out.println("call functinos -> view expenses from category or period");
+          System.out.println();
+          expensecontrol.totalByCategory();
+          System.out.println();
+          System.out.print("Press any key to continue...");
+          System.in.read();
+          System.out.println();
           break;
 
         case 6:
-          System.out.println("call functinos -> safe file");
+          System.out.println();
+          expensecontrol.categoryTotals();
+          System.out.println();
+          System.out.print("Press any key to continue...");
+          System.in.read();
+          System.out.println();
           break;
 
         case 7:
           System.out.println("call functinos -> close the program");
+          expensecontrol.exportData("data.csv");
+          System.out.println("Session Closed!");
+          break;
 
         default:
           System.out.println("call functinos -> Wrong option, try again!");

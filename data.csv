@@ -1,0 +1,39 @@
+[CATEGORIES]
+Id,Name,Description
+1,Food,Every kind of meal
+2,Transportation,Related to commuted
+3,Housing,Rent
+4,Education,Related to education expenses
+5,Health,Medical expenses
+6,Entertainment,Movies and games
+7,Utilities,Electricity water internet
+8,Clothing,Clothes and accessories
+9,Personal Care,Personal hygiene
+10,Other,Miscellaneous expenses
+
+[EXPENSES]
+Date,Description,Category,Amount
+2025-11-12,Carrefour groceries,1,36.16
+2025-11-15,House rent,3,1100.0
+2025-11-13,Cardbus credit refill,2,50.0
+2025-11-15,Meat purchase,1,98.5
+2025-11-10,Netflix subscription,6,26.9
+2025-11-09,Electricity bill,7,142.3
+2025-11-11,Pharmacy painkillers,5,32.0
+2025-11-14,Internet bill,7,99.9
+2025-11-12,Shampoo and soap,9,25.0
+2025-11-08,Black t shirt,8,45.0
+2025-11-10,Coffee with friends,1,22.5
+2025-11-13,Uber to hospital,2,18.75
+2025-11-07,Steam game sale,6,19.99
+2025-11-05,Unexpected purchase,10,15.0
+2025-11-04,Bus ticket,2,6.0
+2025-11-06,Bottled water,1,3.5
+2025-11-03,Notebook for class,4,12.0
+2025-11-02,Online course fee,4,49.0
+2025-11-01,Medical appointment,5,220.0
+2025-11-09,Haircut,9,30.0
+2025-11-10,Socks pack,8,12.9
+2025-11-08,Gas refill,2,40.0
+2025-11-14,Snack at bakery,1,9.8
+2025-11-15,Light bulb pack,7,18.0
